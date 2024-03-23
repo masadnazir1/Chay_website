@@ -1,0 +1,176 @@
+.home-container {
+    background-color: #f5f5f5;
+    
+    background-image: url('bg1.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust initial height as needed */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+
+.order-btn{
+
+    border: none;
+    padding: 10px 30px;
+    background-color: #fbca0a;
+    border: 2px solid;
+    border-color: #f5f5f5;
+    max-width: 40%;
+}
+
+.main-ec-p{
+    color: #bbfb0a;
+    font-weight: bold;
+}
+
+.center-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+   
+
+
+
+    .services{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 40%;
+        
+    
+        gap: 20px;
+    }
+}
+
+
+
+.home-container-img{
+    width: 300px;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+
+
+.heading {
+    font-size: 36px;
+    color: #91d1d5;
+}
+
+
+
+
+.main{
+    background-color: #fbe3c6;
+}
+
+
+
+.container{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    justify-content: center;
+    
+
+    gap: 20px;
+}
+
+.SERVICE{
+    color: #fbca0a;
+}
+
+.OUR{
+
+    color: #bbfb0a;
+}
+
+.mainitems{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.item-img{
+    width: 30%;
+}
+
+.items{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.service-text{
+    font-size: small;
+    margin-top: -30px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .mainitems{
+        display: flex;
+        flex-direction: column;
+    }
+    .SERVICE{
+        color: #fbca0a;
+        font-size: 25px;
+    }
+    .OUR{
+
+        color: #bbfb0a;
+        font-size: 25px;
+    }
+
+
+    .home-container-img{
+        width: 100px;
+
+    }
+
+    /* .home-container{
+        display: flex;
+        flex-direction: column;
+    } */
+
+}
