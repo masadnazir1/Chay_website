@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import cart from './cart.png';
+import logo from './logo.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
                 <div className={`line ${isMenuOpen ? 'open' : ''}`}></div>
             </div>
             <div className="logo">
-                <img src="your_logo.png" alt="Logo" />
+                <img src={logo} alt="Logo" />
             </div>
             <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul className="nav-links">

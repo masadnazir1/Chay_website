@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    background-color: #eff3f3;
+    padding: 5px;
+    background-color: #ffe7b9;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -11,7 +11,7 @@
 }
 
 .logo img {
-    width: 40px; /* Adjust according to your logo size */
+    width: 60px; /* Adjust according to your logo size */
 }
 
 .cart {
