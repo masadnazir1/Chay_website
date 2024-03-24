@@ -6,6 +6,9 @@ import TeaPage from './components/TeaPage';
 import CoffeePage from './components/CoffeePage';
 import AboutPage from './components/AboutPage';
 import Modal from './components/Modal'; // Import Modal component
+import Breadcrumb from './components/Breadcrumb';
+
+
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);

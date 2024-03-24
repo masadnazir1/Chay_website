@@ -28,6 +28,7 @@
     background-color: #2392f2;
     padding: 10px;
     border-radius: 3px;
+    display: none;
 }
 
 .nav-links {
@@ -97,10 +98,13 @@
     .nav-links {
         display: none;
     }
-    
-    /* .user-actions a:not(:last-child) {
+    .signup{
+
         display: none;
-    } */
+    }
+    .user-actions a:not(:last-child) {
+        display: none;
+    }
 
     .hamburger {
         display: flex; /* Display hamburger menu on mobile */
