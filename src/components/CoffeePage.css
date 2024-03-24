@@ -1,0 +1,102 @@
+.coffee-container {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 5px;
+    gap: 10px;
+    background-color: #e6fff7;
+}
+
+
+.flex-wrap{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+.coffee-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px -3px rgba(4, 5, 70, 0.288);
+}
+
+.coffe-img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: -20px;
+}
+
+.coffee-details {
+    padding: 15px;
+    background-color: #ff9e56;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+
+.coffee-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.coffee-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+.coffee-details button:hover {
+    background-color: #013164;
+}
+
+.wishlist-icon {
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.coffee-btn{
+
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    
+
+}
