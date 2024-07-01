@@ -1,0 +1,151 @@
+/* src/components/ServiceBox.css */
+
+.service-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 20px;
+  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: gradientAnimation 8s ease infinite;
+  background: linear-gradient(130deg, #efe0f1, #8886fc, #f0e5ec);
+  overflow: hidden;
+  background-size: 200% auto;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 20px;
+}
+
+
+.Contact {
+  border-radius: 3px;
+  padding: 15px 30px;
+  width: 50%;
+  background: linear-gradient(3deg, #c20dc9, #ff0bde);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  color: white; /* Assuming you want white text on the button */
+  text-align: center; /* Center text inside the button */
+  cursor: pointer; /* Change cursor to pointer when hovering over the button */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Ensure text doesn't overflow the button */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  position: relative; /* Positioning context for the pseudo-element */
+  margin-right: 10px;
+  border-radius: 100px;
+}
+
+.Contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen to the left */
+  width: 40%;
+  height: 100%;
+  background: rgb(255 255 255 / 75%);/* Semi-transparent white line */
+  transform: skewX(-45deg); /* Skew the line */
+  animation: swipeAnimation 4s linear infinite; /* Swiping animation */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes swipeAnimation {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.service-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.animated-text {
+  background: linear-gradient(130deg, #9207ad, #16f358, #e2089a);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-image {
+  max-width: 50%;
+  max-height: 50%;
+  animation: imageAnimation 8s ease infinite;
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .service-box {
+    flex-direction: column;
+  }
+
+  .service-content {
+    text-align: center;
+  }
+}

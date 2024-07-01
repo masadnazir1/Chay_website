@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: #ffe7b9;
+    background: linear-gradient(270deg, #28a808,#8d2e96, #5c0372);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -11,25 +11,82 @@
 }
 
 .logo img {
-    width: 60px; /* Adjust according to your logo size */
+    width: 30%; /* Adjust according to your logo size */
 }
 
-.cart {
-    width: 40px;
-}
+
+
+
+/* src/AnimatedCarousel.css */
 
 .login {
-    background-color: #fe9900;
     border-radius: 3px;
-    padding: 10px 15px;
-}
+    padding: 15px 30px;
+    width: 100%;
+    background: linear-gradient(3deg, #c20dc9, #ff0bde);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+    color: white; /* Assuming you want white text on the button */
+    text-align: center; /* Center text inside the button */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensure text doesn't overflow the button */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+    position: relative; /* Positioning context for the pseudo-element */
+    margin-right: 10px;
+    border-radius: 100px;
+  }
+  
+  .login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 40%;
+    height: 100%;
+    background: rgb(255 255 255 / 75%);/* Semi-transparent white line */
+    transform: skewX(-45deg); /* Skew the line */
+    animation: swipeAnimation 4s linear infinite; /* Swiping animation */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes swipeAnimation {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .login {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
 
-.signup {
-    background-color: #2392f2;
-    padding: 10px;
-    border-radius: 3px;
-    display: none;
-}
+
+
+
+
+
 
 .nav-links {
     list-style: none;
@@ -41,11 +98,12 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: #02052e;
+    color: #ffffff;
+    
 }
 
 .nav-links li a:hover {
-    color: #ff9100;
+    color: #f326fa;
     border-bottom: 5px solid;
     transition: 1ms ease-in-out;
 }

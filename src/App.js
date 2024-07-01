@@ -7,6 +7,7 @@ import CoffeePage from './components/CoffeePage';
 import AboutPage from './components/AboutPage';
 import Modal from './components/Modal'; // Import Modal component
 import Breadcrumb from './components/Breadcrumb';
+import AnimatedCarousel from './components/AnimatedCarousel';
 
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,6 +37,7 @@ function App() {
         <Router>
             <div className="App">
                 <Header openModal={openModal} /> {/* Pass openModal function to Header */}
+
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/tea" element={<TeaPage />} />

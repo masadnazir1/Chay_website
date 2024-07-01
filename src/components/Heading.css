@@ -1,0 +1,32 @@
+/* src/components/Heading.css */
+
+.heading-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .gradient-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #fc4a1a, #f7b733, #17214e, #00ffdd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .gradient-text span {
+    display: inline-block;
+    animation: slideText 10s linear infinite;
+  }
+  
+  @keyframes slideText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
