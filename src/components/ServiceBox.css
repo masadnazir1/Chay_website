@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(to bottom, #74ebd5, #9face6);
+  
   overflow: hidden;
   position: relative;
   min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
