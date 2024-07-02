@@ -6,8 +6,8 @@ import TeaPage from './components/TeaPage';
 import CoffeePage from './components/CoffeePage';
 import AboutPage from './components/AboutPage';
 import Modal from './components/Modal'; // Import Modal component
-import Breadcrumb from './components/Breadcrumb';
-import AnimatedCarousel from './components/AnimatedCarousel';
+
+import Footer from './components/Footer';
 
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,6 +46,8 @@ function App() {
                 </Routes>
                 <Modal isOpen={isModalOpen} onClose={closeModal} /> {/* Render Modal component */}
             </div>
+
+            <Footer></Footer>
         </Router>
     );
 }

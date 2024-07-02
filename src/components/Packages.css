@@ -1,0 +1,97 @@
+/* src/Packages.css */
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    
+    overflow: hidden;
+    position: relative;
+     /* Ensure the container takes at least the full height of the viewport */
+  }
+  
+  .package-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .package-box h3 {
+    margin-top: 0;
+  }
+  
+  .package-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .package-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .package-box ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%2374ebd5" d="M8 1.5l6 6-6 6-6-6 6-6z"/></svg>') no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .package-box button {
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .package-box button:hover {
+    background-color: #5753c9;
+  }
+  
+  /* Animation for the background */
+  @keyframes moveClouds {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .cloud {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    animation: moveClouds 20s linear infinite;
+    opacity: 0.7;
+  }
+  
+  .cloud:nth-child(2) {
+    width: 300px;
+    height: 150px;
+    top: 150px;
+    animation-duration: 25s;
+    opacity: 0.6;
+  }
+  
+  .cloud:nth-child(3) {
+    width: 250px;
+    height: 125px;
+    top: 250px;
+    animation-duration: 30s;
+    opacity: 0.8;
+  }
+  

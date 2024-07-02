@@ -1,14 +1,16 @@
 /* Example: src/components/Main.css */
 
 .main {
-  background: linear-gradient(135deg, #7e26b9,#58f011,#d31fe4, #ffb005);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
+  position: relative;
+  overflow: hidden;
   min-height: 100vh; /* Ensure full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(135deg, #7e26b9, #58f011, #d31fe4, #ffb005);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
 }
 
 @keyframes gradientAnimation {
@@ -21,4 +23,55 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  filter: blur(50px);
+  animation: bubbleAnimation 20s ease-in-out infinite;
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(50%, 50%) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Additional bubbles with different animation delays and durations */
+.bubble:nth-child(1) {
+  top: 20%;
+  left: 40%;
+  animation-duration: 25s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-duration: 30s;
+  animation-delay: 5s;
+}
+
+.bubble:nth-child(3) {
+  top: 80%;
+  left: 30%;
+  animation-duration: 20s;
+  animation-delay: 10s;
+}
+
+.bubble:nth-child(4) {
+  top: 30%;
+  left: 80%;
+  animation-duration: 35s;
+  animation-delay: 15s;
 }

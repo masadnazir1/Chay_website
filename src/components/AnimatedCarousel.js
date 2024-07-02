@@ -7,31 +7,31 @@ import "./AnimatedCarousel.css";
 
 const slides = [
   {
-    heading: "Slide 1 Heading",
-    text: "This is the text for slide 1.",
+    heading: "Empowering Your Dream Projects with Cutting-Edge Technology",
+    text: "Next-Level Web Apps for Next-Level Growth",
     button1: "Learn More",
     button2: "Get Started",
     imageUrl:
       "https://static.vecteezy.com/system/resources/thumbnails/041/318/447/small_2x/mobile-app-development-language-development-software-programming-3d-render-png.png", // Placeholder image URL
   },
   {
-    heading: "Slide 2 Heading",
-    text: "This is the text for slide 2.",
+    heading: "Transforming Ideas into Apps: Start Your Mobile Journey with ",
+    text: "Next-Level Web Apps for Next-Level Growth",
     button1: "Discover",
     button2: "Join Now",
     imageUrl:
       "https://static.vecteezy.com/system/resources/thumbnails/009/300/321/small_2x/3d-illustration-of-web-development-png.png", // Placeholder image URL
   },
   {
-    heading: "Slide 3 Heading",
-    text: "This is the text for slide 3.",
+    heading: "Empower Your Business with Cutting-Edge Web Apps today",
+    text: "Next-Level Web Apps for Next-Level Growth",
     button1: "Find Out",
     button2: "Sign Up",
     imageUrl: "https://traininginchennai.in/images/graphic-web-design.png", // Placeholder image URL
   },
   {
-    heading: "Slide 4 Heading",
-    text: "This is the text for slide 4.",
+    heading: "Innovate, Integrate, Dominate with smartlabtechnologies",
+    text: "Next-Level Web Apps for Next-Level Growth",
     button1: "Explore",
     button2: "Register",
     imageUrl:

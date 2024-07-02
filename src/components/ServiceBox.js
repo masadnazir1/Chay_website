@@ -20,6 +20,17 @@ const ServiceBox = () => {
       imageUrl:
         "https://www.prismetric.com/wp-content/uploads/2021/06/Mobile-App-Development.png",
     },
+
+    {
+      title: "Mobile App Development",
+      subtitle: "iOS & Android",
+      description:
+        "We build native and cross-platform mobile apps for all platforms.",
+      imageUrl:
+        "https://www.prismetric.com/wp-content/uploads/2021/06/Mobile-App-Development.png",
+    },
+
+    
     // Add more services as needed
   ];
 
@@ -27,8 +38,6 @@ const ServiceBox = () => {
     <div className="services-container">
       {services.map((service, index) => (
         <div key={index} className="service-box">
-         
-
           {/* <a href="#" className="Contact">
               Learn More
             </a> */}
@@ -37,9 +46,6 @@ const ServiceBox = () => {
             <h2 className="animated-text">{service.title}</h2>
             <h3>{service.subtitle}</h3>
             <p>{service.description}</p>
-
-          
-
           </div>
           <div className="image-container">
             <img
@@ -49,10 +55,12 @@ const ServiceBox = () => {
             />
           </div>
 
-          <div>  <a href="#" className="Contact">
-            Get Started
-          </a>
- </div>
+          <div>
+            {" "}
+            <a href="#" className="Contact">
+              Get Started
+            </a>
+          </div>
         </div>
       ))}
     </div>

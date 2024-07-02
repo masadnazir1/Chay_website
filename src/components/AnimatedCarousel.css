@@ -5,13 +5,14 @@
   margin: auto;
   overflow: hidden;
   position: relative;
+  height: 20%;
 }
 
 .carousel-slide {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 50%;
   position: relative;
   color: white;
   text-align: left;
@@ -46,11 +47,15 @@
   flex: 1;
   padding-right: 20px;
   margin-left: 10%;
+  font-weight: bold;
+  font-family: inherit;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  font-weight: bold;
+  font-family: inherit;
 }
 
 p {
@@ -64,10 +69,10 @@ p {
 }
 
 .gradient-button {
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
-  border-radius: 5px;
-  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border-radius: 2px;
+  background: linear-gradient(90deg, #010847, #058a00, #db05e2);
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -95,7 +100,6 @@ p {
   .carousel-slide {
     flex-direction: column;
     height: auto;
-    
   }
 
   .slide-content {
